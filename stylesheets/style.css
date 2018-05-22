@@ -1,20 +1,19 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300italic,700italic,300,700);
 html {
-  background: #6C7989;
+  background: #000;
 }
 
 body {
   padding: 50px 0;
   margin: 0;
-  font: 14px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #555;
+  color: #fff;
   font-weight: 300;
 }
 
 .wrapper {
   width: 840px;
   margin: 0 auto;
-  background: #DEDEDE;
+  background: #6C7989;
 }
 
 header, section, footer {
@@ -37,7 +36,7 @@ strong {
 }
 
 header {
-  background: #C6EAFA;
+  background: #6C7989;
   position: relative;
   padding: 15px 20px;
   border-bottom: 1px solid #B2D2E1;
@@ -118,7 +117,6 @@ header ul a {
   font-weight: 400;
   padding-top: 6px;
   height: 40px;
-  text-shadow: rgba(0, 0, 0, 0.4) 0 -1px 0;
 }
 header ul a strong {
   font-size: 14px;
@@ -162,15 +160,6 @@ h2 {
 
 h3, h4, h5, h6 {
   color: #494949;
-}
-
-blockquote {
-  margin: 0 -20px 20px;
-  padding: 15px 20px 1px 40px;
-  font-style: italic;
-  background: #ccc;
-  background: rgba(0, 0, 0, 0.06);
-  color: #222;
 }
 
 table {
