@@ -7,6 +7,12 @@ body {
   font-family:calibri;
 }
 
+.gameWindow {
+ background: #000;
+  color: #fff;
+  padding:5px;
+}
+
 .wrapper {
   width: 840px;
   margin: 0 auto;
