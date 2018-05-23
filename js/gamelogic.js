@@ -1,4 +1,7 @@
-function runGame() {
-  var text = "THIS IS THE MAIN GAME LOGIC";
-  document.getElementById("gameWindow").innerHTML = text;
+var gameEngine = function(canvas, FPS) {
+  this.FPS = 1000 / FPS;
+  this.canvas = canvas;
+  this.context2D = canvas.getContext("2d");
+  this.gameObjects = [];
+  this.setupCanvas();
 }
