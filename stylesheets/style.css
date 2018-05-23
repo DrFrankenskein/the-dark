@@ -17,7 +17,7 @@ body {
 .wrapper {
   width: 840px;
   margin: 0 auto;
-  background: #6C7989;
+  background: #555150;
 }
 
 header, section, footer {
@@ -40,26 +40,20 @@ strong {
 }
 
 header {
-  background: #6C7989;
   position: relative;
   padding: 15px 20px;
-  border-bottom: 1px solid #B2D2E1;
 }
 header h1 {
   margin: 0;
   padding: 0;
   font-size: 24px;
   line-height: 1.2;
-  color: #000;
 }
 header.without-description h1 {
   margin: 10px 0;
 }
 header p {
   margin: 0;
-  color: #000;
-  width: 300px;
-  font-size: 13px;
 }
 header p.view {
   display: none;
@@ -76,7 +70,7 @@ header p.view small {
 section {
   padding: 15px 20px;
   font-size: 15px;
-  border-top: 1px solid #fff;
+  border-top: 1px solid #aaa;
   position: relative;
 }
 
@@ -118,8 +112,7 @@ table {
 
 th, td {
   text-align: left;
-  padding: 5px 10px;
-  border-bottom: 1px solid #aaa;
+  padding: 5px 0px;
 }
 
 dt {
