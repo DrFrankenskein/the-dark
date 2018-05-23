@@ -1,7 +1,4 @@
-var gameEngine = function(canvas, FPS) {
-  this.FPS = 1000 / FPS;
-  this.canvas = canvas;
-  this.context2D = canvas.getContext("2d");
-  this.gameObjects = [];
-  this.setupCanvas();
-}
+var canvas = document.getElementById("gameWindow");
+var ctx = canvas.getContext("2d");
+ctx.font = "18px Calibri";
+ctx.fillText("Hello World",10,50);
