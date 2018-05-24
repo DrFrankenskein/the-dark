@@ -8,19 +8,24 @@ body {
 }
 
 .wrapper {
-  width: 800px;
+  width: 680px;
   margin: 0 auto;
   padding: 10px;
   background: #555150;
+  text-align: center;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   border-radius: 30px;
 }
 
-#gameWindowContainer {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
+header h1 { 
+  margin: 0px;
+}
+
+section {
+  padding: 15px 20px;
+  border-top: 1px solid #aaa;
+  position: relative;
 }
 
 #gameWindow {
@@ -32,14 +37,6 @@ body {
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   border-radius: 30px;
-}
-
-
-
-section {
-  padding: 15px 20px;
-  border-top: 1px solid #aaa;
-  position: relative;
 }
 
 table {
