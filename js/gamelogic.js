@@ -14,6 +14,7 @@ function runGame() {
     ctx.textAlign = "left";
 
     for (i = 0; i < introText.length+1; i++) {
+        console.log("introText index[" + i + "] - " + introText[i])
         ctx.fillText(introText[i],5,lineHeight*introText);
     }
 }
