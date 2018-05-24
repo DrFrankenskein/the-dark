@@ -11,12 +11,24 @@ function runGame() {
     ctx.width = 640;
     ctx.height = 480;
     
-    ctx.font = "normal normal 12px Calibri";
+    ctx.font = "normal normal 12pt Calibri";
     ctx.fillStyle= "#fff";
     ctx.textAlign = "left";
 
-    for (i = 0; i < introText.length+1; i++) {
+    for (i = 0; i < introText.length; i++) {
         //console.log("introText index[" + i + "] - " + introText[i])
         ctx.fillText(introText[i], 5, lineHeight * i);
     }
+}
+
+function buildUI {
+    var button = {
+        width: 122,
+        height: 40
+    }
+    
+    ctx.strokeRect(5, 350, button.width, button.height);
+    ctx.font = '10pt Calibri';
+    ctx.fillStyle = '#CCC';
+    ctx.fillText('Start', 345, 415);
 }
