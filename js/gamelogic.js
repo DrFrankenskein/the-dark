@@ -1,6 +1,25 @@
-function runGame() {
-    var canvas = document.getElementById("gameWindow");
-    var ctx = canvas.getContext("2d");
+var canvas = document.getElementById("gameWindow");
+var ctx = canvas.getContext("2d");
+var FPS = 30;
+
+setInterval(function() {
+    update();
+    draw();
+}, 1000/FPS);
+
+function update() {
+    dispDialog();
+}
+
+function draw() {
+    ctx.strokeRect(5, 350, 122, 40);
+    ctx.font = '10pt Calibri';
+    ctx.fillStyle = '#CCC';
+    ctx.fillText('Start', 345, 415);
+   
+}
+
+function dispDialog() {
     var lineHeight = 10;
     var introText = [
         "You wake up.",
@@ -19,16 +38,4 @@ function runGame() {
         //console.log("introText index[" + i + "] - " + introText[i])
         ctx.fillText(introText[i], 5, lineHeight * i);
     }
-}
-
-function buildUI {
-    var button = {
-        width: 122,
-        height: 40
-    }
-    
-    ctx.strokeRect(5, 350, button.width, button.height);
-    ctx.font = '10pt Calibri';
-    ctx.fillStyle = '#CCC';
-    ctx.fillText('Start', 345, 415);
 }
