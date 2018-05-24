@@ -32,9 +32,10 @@ function draw() {
 }
 
 function dispDialog(frame) {
+    var dSpeed = frame/100;
     var lineHeight = 20;
     ctx.font = "normal normal 14pt Calibri";
     ctx.fillStyle= "#fff";
     ctx.textAlign = "left";
-    ctx.fillText(dialog[frame], 5, lineHeight * i);
+    ctx.fillText(dialog[dspeed], 5, lineHeight * dSpeed);
 }
