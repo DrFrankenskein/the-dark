@@ -18,7 +18,7 @@ body {
   border-radius: 30px;
 }
 
-header h1 { 
+header h1, header p { 
   margin: 0px;
 }
 
@@ -37,6 +37,10 @@ section {
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   border-radius: 30px;
+}
+
+footer {
+  text-align: center;
 }
 
 table {
