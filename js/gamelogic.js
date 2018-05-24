@@ -23,12 +23,35 @@ function update() {
 function draw() {
     ctx.font = '14pt Calibri';
     ctx.fillStyle = '#CCC';
+    
     //timer
     ctx.fillText(timer, 5, 600);
-    //buttons
-    ctx.fillText('FORWARD', 345, 415);
+    
+    //button - DIRECTIONS
     ctx.strokeStyle = '#CCC';
-    ctx.strokeRect(5, 350, 122, 40);
+    ctx.strokeRect(5, 350, 122, 90);
+    ctx.fillText('F', 10, 355);        
+    ctx.fillText('B', 10, 355);
+    ctx.fillText('L', 5, 355);
+    ctx.fillText('R', 15, 355);
+        
+    //button - LOOK        
+    ctx.strokeStyle = '#CCC';
+    ctx.strokeRect(132, 350, 122, 40);
+    ctx.fillText('BACKWARD', 7, 355);        
+    
+    //button - TOUCH                
+    ctx.strokeStyle = '#CCC';
+    ctx.strokeRect(264, 350, 122, 40);        
+    ctx.fillText('LEFT', 7, 355);
+
+    //button - PICKUP                
+    //button - DROP
+    //button - THROW
+    //button - USE
+    //button - ASK
+    //button - TELL
+             
 }
 
 function dispDialog(frame) {
