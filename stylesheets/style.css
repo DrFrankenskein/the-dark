@@ -11,8 +11,10 @@ body {
  background: #000;
   color: #fff;
   padding:5px;
-  width: 99%;
+  width: 640px;
   height: 480px;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 .wrapper {
@@ -35,11 +37,6 @@ p {
   padding: 0;
 }
 
-strong {
-  color: #000;
-  font-weight: 700;
-}
-
 header {
   position: relative;
   padding: 15px 20px;
@@ -50,23 +47,6 @@ header h1 {
   font-size: 24px;
   line-height: 1.2;
 }
-header.without-description h1 {
-  margin: 10px 0;
-}
-header p {
-  margin: 0;
-}
-header p.view {
-  display: none;
-  font-weight: 700;
-}
-header p.view a {
-  color: #000;
-}
-header p.view small {
-  font-weight: 400;
-}
-
 
 section {
   padding: 15px 20px;
@@ -86,24 +66,8 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
 }
 
-p, ul, ol, table, pre, dl {
-  margin: 0 0 20px;
-}
-
-h1, h2, h3 {
-  line-height: 1.1;
-}
-
 h1 {
   font-size: 28px;
-}
-
-h2 {
-  color: #fff;
-}
-
-h3, h4, h5, h6 {
-  color: #fff;
 }
 
 table {
@@ -116,42 +80,12 @@ th, td {
   padding: 5px 0px;
 }
 
-dt {
-  color: #222;
-  font-weight: 700;
-}
-
-th {
-  color: #222;
-}
-
-small {
-  font-size: 11px;
-}
-
-hr {
-  border: 0;
-  background: #aaa;
-  height: 1px;
-  margin: 0 0 20px;
-}
-
 footer {
   width: 640px;
   margin: 0 auto;
   padding: 20px 0 0;
   color: #ccc;
   overflow: hidden;
-}
-footer a {
-  color: #fff;
-  font-weight: bold;
-}
-footer p {
-  float: left;
-}
-footer p + p {
-  float: right;
 }
 
 @media print, screen and (max-width: 740px) {
