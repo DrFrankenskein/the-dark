@@ -1,6 +1,6 @@
 var canvas = document.getElementById("gameWindow");
 var ctx = canvas.getContext("2d");
-var FPS = 15;
+var FPS = 5;
 var timer = 0;
 var dialog = [
         "You wake up.",
@@ -37,5 +37,5 @@ function dispDialog(frame) {
     ctx.font = "normal normal 14pt Calibri";
     ctx.fillStyle= "#fff";
     ctx.textAlign = "left";
-    ctx.fillText(dialog[dspeed], 5, lineHeight * dSpeed);
+    ctx.fillText(dialog[dSpeed], 5, lineHeight * dSpeed);
 }
