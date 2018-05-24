@@ -10,15 +10,11 @@ body {
 .wrapper {
   width: 800px;
   margin: 0 auto;
+  padding: 10px;
   background: #555150;
-}
-
-#gameWindow {
- background: #000;
-  color: #fff;
-  padding:5px;
-  width: 640px;
-  height: 480px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
 }
 
 #gameWindowContainer {
@@ -27,14 +23,23 @@ body {
   text-align: center;
 }
 
+#gameWindow {
+ background: #000;
+  color: #fff;
+  padding:5px;
+  width: 640px;
+  height: 480px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+
+
+
 section {
   padding: 15px 20px;
   border-top: 1px solid #aaa;
   position: relative;
-}
-
-#gameWindow {
-  border: 1px solid #000;
 }
 
 table {
