@@ -5,6 +5,7 @@ var FPS = 30;
 setInterval(function() {
     update();
     draw();
+    console.log("FRAME");
 }, 1000/FPS);
 
 function update() {
