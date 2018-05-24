@@ -1,7 +1,7 @@
 function runGame() {
     var canvas = document.getElementById("gameWindow");
     var ctx = canvas.getContext("2d");
-    var lineHeight = 30;
+    var lineHeight = 10;
     var introText = [
         "You wake up.",
         "You realise you are not in your own bed.",
