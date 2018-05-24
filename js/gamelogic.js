@@ -13,7 +13,7 @@ function runGame() {
     ctx.fillStyle= "#fff";
     ctx.textAlign = "left";
 
-    for (i = 0; i <= introText.length; i++) {
+    for (i = 0; i < introText.length+1; i++) {
         ctx.fillText(introText[i],5,lineHeight*introText);
     }
 }
