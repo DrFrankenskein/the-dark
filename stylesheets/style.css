@@ -13,18 +13,17 @@ body {
   padding: 10px;
   background: #555150;
   text-align: center;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
 }
 
 header h1, header p { 
-  margin: 0px;
+  margin-top: 2px;
 }
 
 section {
   padding: 15px 20px;
-  border-top: 1px solid #aaa;
   position: relative;
 }
 
@@ -34,9 +33,9 @@ section {
   padding:5px;
   width: 640px;
   height: 480px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
 }
 
 footer {
@@ -49,6 +48,6 @@ table {
 }
 
 th, td {
-  text-align: left;
+  text-align: center;
   padding: 5px 0px;
 }
