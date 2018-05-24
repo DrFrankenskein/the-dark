@@ -1,6 +1,7 @@
 var canvas = document.getElementById("gameWindow");
 var ctx = canvas.getContext("2d");
-var FPS = 30;
+var FPS = 15;
+var timer = 0;
 var dialog = [
         "You wake up.",
         "You realise you are not in your own bed.",
@@ -15,24 +16,25 @@ setInterval(function() {
 }, 1000/FPS);
 
 function update() {
-    dispDialog();
+    timer =+ 1;
+    dispDialog(timer);
 }
 
 function draw() {
-    ctx.strokeRect(5, 350, 122, 40);
-    ctx.font = '10pt Calibri';
+    ctx.font = '14pt Calibri';
     ctx.fillStyle = '#CCC';
-    ctx.fillText('Start', 345, 415);
-   
+    //timer
+    ctx.fillText(timer, 5, 600);
+    //buttons
+    ctx.fillText('FORWARD', 345, 415);
+    ctx.strokeStyle = '#CCC';
+    ctx.strokeRect(5, 350, 122, 40);
 }
 
-function dispDialog() {
-    var lineHeight = 10;  
-    ctx.font = "normal normal 12pt Calibri";
+function dispDialog(frame) {
+    var lineHeight = 20;
+    ctx.font = "normal normal 14pt Calibri";
     ctx.fillStyle= "#fff";
     ctx.textAlign = "left";
-
-    for (i = 0; i < dialog.length; i++) {
-        ctx.fillText(dialog[i], 5, lineHeight * i);
-    }
+    ctx.fillText(dialog[frame], 5, lineHeight * i);
 }
