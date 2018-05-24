@@ -13,4 +13,5 @@ function runGame() {
   
   for (i = 0; i =< introText.length; i++) {
                    ctx.fillText(introText[i],5,lineHeight*introText);
+  }
 }
