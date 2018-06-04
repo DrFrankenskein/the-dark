@@ -4,11 +4,11 @@ body {
   color: #fff;
   font-weight: 300;
   background: #000;
-  font-family:calibri;
+  font-family:Courier;
 }
 
 .wrapper {
-  width: 680px;
+  width: 650px;
   margin: 0 auto;
   padding: 10px;
   background: #555150;
@@ -18,36 +18,124 @@ body {
   border-radius: 10px;
 }
 
-header h1, header p { 
-  margin-top: 2px;
+header {
+  padding:0;
+  margin-bottom:2px;
+}
+
+h1,h2,h3 {
+  padding:0;
+  margin:0;
+  font-weight:normal;
+}
+
+a {
+  color:orange;
 }
 
 section {
-  padding: 15px 20px;
+  width:640px;
+  padding: 5px;
   position: relative;
-}
-
-#gameWindow {
- background: #000;
+  background: #000;
   color: #fff;
-  padding:5px;
-  width: 640px;
-  height: 480px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
+}
+
+#gameWindow {
+  padding:0px;
+  width: 640px;
+  height: 300px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+#dialog {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#dialog.animFadeIn {
+  animation: fadeIn 2s;
+}
+
+#dialog.animFadeOut {
+  animation: fadeOut 2s;
+}
+
+#dialog.animFade {
+  animation: fade 2s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;filter:blur(40px);}
+  100% {opacity:1;filter:blur(0px);}
+}
+
+@keyframes fadeOut {
+  0% {opacity:1;filter:blur(0px);}
+  100% {opacity:0;filter:blur(40px);}
+}
+
+@keyframes fade {
+  0% {opacity:0;filter:blur(40px);}
+  50% {opacity:1;filter:blur(0px);}
+  100% {opacity:0;filter:blur(40px);}
 }
 
 footer {
   text-align: center;
 }
 
+#ctrlWindow.animFadeIn {
+  animation: fadeIn 10s;
+}
+
 table {
-  width: 100%;
+  width: 640px;
   border-collapse: collapse;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 th, td {
   text-align: center;
-  padding: 5px 0px;
+  padding: 0px;
+}
+
+button {
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #fff;
+  margin: 2px;
+  padding: 10px;
+  font-size:16px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+#fwd, #bwd {
+  width: 100px;
+}
+
+#left, #right {
+  width: 40px;
+  height: 90px;
+}
+
+#look, #touch, #take, #drop, #throw, #use, #ask, #tell {
+  width: 90px;
 }
