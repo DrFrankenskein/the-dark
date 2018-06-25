@@ -113,29 +113,36 @@ th, td {
 button {
   background-color: #000;
   color: #fff;
-  border: 2px solid #fff;
-  margin: 2px;
-  padding: 10px;
   font-size:16px;
+  border: 1px solid #555150;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
 
 button:hover {
-  background-color: #fff;
-  color: #000;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #fff;
 }
 
-#fwd, #bwd {
-  width: 100px;
-}
-
-#left, #right {
+#N, #NE, #E, #SE, #S, #SW, #W, #NW {
   width: 40px;
-  height: 90px;
+  height: 30px;
+  margin: 2px;
+  padding: 2px;
+
+}
+
+#NAVC {
+  width: 32px;
+  height: 32px;
+  margin: 0;
+  padding: 0;
 }
 
 #look, #touch, #take, #drop, #throw, #use, #ask, #tell {
   width: 90px;
+  margin: 2px;
+  padding: 10px;
 }

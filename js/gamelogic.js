@@ -4,7 +4,8 @@ var gameWindow = document.getElementById("gameWindow"),
 	intro = false,
 	actions = ["fwd","bwd","left","right","look","touch","take","drop","throw","use","ask","tell"],
 	btns = document.getElementsByTagName("button"),
-	loc = 0;
+	currentLoc = 0,
+	newLoc;
 
 for (i = 0; i < btns.length; i++) {
 	var button = btns[i];
@@ -17,22 +18,30 @@ function createButtons() {
 
 function usrAction(action) {
 	switch (action) {
-		case "fwd":
-			dispDialog("You get up and step forward...",0);
-			loc =+ 1;
-			alert(locations[loc]);
+		case "N":
+			dispDialog("You go North...",0);
 			break;
-		case "bwd":
-			dispDialog("You step back...",0);
-			loc =- 1;
-			alert(locations[loc]);
+		case "NE":
+			dispDialog("You go North East...",0);
 			break;
-		case "left":
-			dispDialog("You try to move...",0);
+		case "E":
+			dispDialog("You go East...",0);
 			break;
-		case "right":
-			dispDialog("You try to move...",0);
+		case "SE":
+			dispDialog("You go South East...",0);
 			break;
+		case "S":
+			dispDialog("You go South...",0);
+			break;
+		case "SW":
+			dispDialog("You go South West...",0);
+			break;
+		case "W":
+			dispDialog("You go West...",0);
+			break;
+		case "NW":
+			dispDialog("You go North West...",0);
+			break;			
 		case "look":
 			dispDialog("You try to look around, but all you see is darkness.",0);
 			break;
